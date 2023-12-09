@@ -78,7 +78,7 @@ jupyter-server==2.6.0
 jupyter-server-terminals==0.4.4
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==3.0.7
-kiwipy[rmq]=>0.7
+kiwipy[rmq]==0.8.3
 kiwisolver==1.4.4
 latexcodec==2.0.1
 mako==1.2.4
@@ -155,7 +155,7 @@ python-json-logger==2.0.7
 python-memcached==1.59
 pytray==0.3.4
 pytz==2021.3
-pyyaml>=5.4
+pyyaml==6.0.0
 pyzmq==25.1.0
 qtconsole==5.4.3
 qtpy==2.3.1
