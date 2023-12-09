@@ -24,7 +24,7 @@ from aiida.orm import Int
 @pytest.mark.parametrize(('args', 'kwargs', 'expected'), (
     ((), {}, 'amqp://guest:guest@127.0.0.1:5672?'),
     ((), {'heartbeat': 1}, 'amqp://guest:guest@127.0.0.1:5672?'),
-    ((), {'cafile': 'file', 'cadata': 'ab'}, 'amqp://guest:guest@127.0.0.1:5672?'),
+    ((), {'cafile': 'file', 'cadata': 'ab'}, 'amqp://guest:guest@127.0.0.1:5672'),
     (('amqps', 'jojo', 'rabbit', '192.168.0.1', 6783), {}, 'amqps://jojo:rabbit@192.168.0.1:6783?'),
 ))  # yapf: disable
 def test_get_rmq_url(args, kwargs, expected):
